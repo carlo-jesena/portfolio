@@ -31,7 +31,7 @@ div {
 
 .header {
   /*max-width: 1024px;*/
-  width: 100%;
+  /*width: 100%;*/
   margin: 0 auto;
   padding: 4rem 0;
   /*display: flex;*/
@@ -39,17 +39,19 @@ div {
 }
 
 .intro-info {
-  display: inline-block;
+  /*display: inline-block;*/
   /*text-align: center;*/
-  width: 100%;
-  max-width: 40%;
-  margin-right: 2%;
+  /*width: 100%;*/
+  /*max-width: 40%;*/
+  /*margin-right: 2%;*/
+  /*margin-top: 5%;*/
 }
 
 .intro-about {
-  display: inline-block;
-  width: 100%;
-  max-width: 60%;
+  /*display: inline-block;*/
+  /*width: 100%;*/
+  /*max-width: 60%;*/
+  margin-top: 2%;
 }
 
 h1 {
@@ -85,15 +87,15 @@ a {
   padding: .5em;
 }
 
-p, h1, h2, h3, h4{
+/*p, h1, h2, h3, h4{
   margin: 0px;
-}
+}*/
 
 p {
   line-height: 1.7;
   font-size: 1.25em;
   text-align: left;
-  padding: 10%;
+  padding: 5%;
 
 }
 
@@ -126,14 +128,14 @@ span {
 #projects .projects-container .proj-container {
   display: flex;
   align-items: center;
-  margin-bottom: 4em;
+  padding: 4%;
 }
 
 #projects .projects-container h1{
   color: #142736;
   display: block;
   text-align: left;
-  margin-bottom: 5%;
+  /*margin-bottom: 5%;*/
 }
 
 #projects .projects-container .proj-container .proj-screenshot {
@@ -142,12 +144,12 @@ span {
 
 #projects .projects-container .proj-container .proj-detail-right{
   margin-left: 10%;
-  max-width: 45%;
+  /*max-width: 45%;*/
 }
 
 #projects .projects-container .proj-container .proj-detail-left{
   margin-right: 10%;
-  max-width: 45%;
+  /*max-width: 45%;*/
 }
 
 #projects .proj-title {
@@ -156,13 +158,19 @@ span {
 
 #projects h3 {
   font-size: 2em;
-  display:inline-block;
+  display: inline-block;
 
 }
 
 #projects i {
   color: #142736;
   font-size: 1.5em;
+}
+
+#projects i:hover {
+	background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
 }
 
 #projects .proj-desc {
@@ -177,6 +185,12 @@ span {
   padding: .5em;
 }
 
+#projects .projects-container .proj-container .proj-desc span {
+  color: #142736;
+  font-size: 1.3em;
+  font-weight: 100;
+  font-family: 'Roboto Slab', serif;
+}
 
 
 #footer {
@@ -196,4 +210,20 @@ ul.contact-list i {
   display: inline-block;
   list-style: none;
   font-size: 1.9em;
+}
+
+@media only screen and (max-width: 500px) {
+    p {
+        text-align: center;
+    }
+    #projects .projects-container h1 {
+      text-align: center;
+    }
+    #projects .projects-container img {
+      min-width: 100%;
+    }
+    /*#projects .projects-container .proj-container .proj-detail {
+      max-width: 100%;
+      order: 2;
+    }*/
 }
